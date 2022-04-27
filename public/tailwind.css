@@ -9,51 +9,35 @@
 }
 body {
 
-  font-family: 'Domine', serif;
+  /* font-family: 'Domin', serif; */
 
 }
 
-.subheading {
-  font-family: 'Lato', sans-serif;
 
 
-
-
-
-
-
+.rgba {
+  background-color: rgba(255,255,255, 0.9);
 }
-input {
-  font-family: sans-serif;
+.shadow {
+  box-shadow: rgb(0 0 0 / 15%) 0px 2px 10px;
 }
-.heading {
-
-
-  font-family: 'Libre Baskerville', serif;
-
-
-
-
+.times {
+  font-family: 'Merriweather', serif;
+  color: rgb(8, 8, 8)
 }
-.call{
-
-
-  font-family: 'Lato', sans-serif;
-
-
+.login-bottom-text{
+  font-family: 'Roboto', sans-serif;
 
 }
 .disclaimer {
-  font-family: sans-serif;
-
 
 }
-.btn {
-font-family: sans-serif;
-
+.center {
+  left: 50%;
+    transform: translate(-50%, 0);
 }
-.rgba {
-  background-color: rgba(10, 10, 10, 0.5);
+.toggle{
+  display: none;
 }
 /* fonts  */
 /*font-family: 'Anton', sans-serif;
