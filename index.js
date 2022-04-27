@@ -9,6 +9,7 @@ $(document).ready(function () {
   });
   $("#background").click(function () {
     $(this).hide();
+
     $("#popup-wrapper").hide();
   });
 });

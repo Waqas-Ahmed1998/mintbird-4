@@ -39,6 +39,10 @@ body {
 .toggle{
   display: none;
 }
+.scale{
+  transform: scale(1);
+  transition: all 1s ease-in;
+}
 /* fonts  */
 /*font-family: 'Anton', sans-serif;
 font-family: 'Anybody', cursive;
