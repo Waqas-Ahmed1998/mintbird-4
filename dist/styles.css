@@ -488,10 +488,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 0.75rem;
 }
 
-.bottom-\[10\%\] {
-  bottom: 10%;
-}
-
 .left-0 {
   left: 0px;
 }
@@ -525,8 +521,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 1.25rem;
 }
 
-.min-h-\[695px\] {
-  min-height: 695px;
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-fit {
@@ -564,14 +560,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center;
 }
 
-.justify-between {
-  justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
-}
-
 .justify-evenly {
   justify-content: space-evenly;
 }
@@ -590,22 +578,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .self-start {
   align-self: flex-start;
-}
-
-.self-baseline {
-  align-self: baseline;
-}
-
-.justify-self-start {
-  justify-self: start;
-}
-
-.justify-self-end {
-  justify-self: end;
-}
-
-.justify-self-center {
-  justify-self: center;
 }
 
 .rounded-lg {
@@ -634,11 +606,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .p-10 {
   padding: 2.5rem;
 }
@@ -653,22 +620,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.5rem;
 }
 
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.px-\[10\] {
-  padding-left: 10;
-  padding-right: 10;
-}
-
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
 
-.pb-10 {
+.py-10 {
+  padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
 
@@ -752,6 +710,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 body {
   /* font-family: 'Domin', serif; */
+  -webkit-tap-highlight-color: transparent;
 }
 
 .rgba {
@@ -833,18 +792,21 @@ font-family: 'Vazirmatn', sans-serif;*/
 }
 
 @media (min-width: 768px) {
-  .md\:top-\[10\%\] {
-    top: 10%;
+  .md\:top-\[50\%\] {
+    top: 50%;
   }
 
-  .md\:h-fit {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+  .md\:min-h-\[695px\] {
+    min-height: 695px;
   }
 
   .md\:w-\[678px\] {
     width: 678px;
+  }
+
+  .md\:translate-y-\[-50\%\] {
+    --tw-translate-y: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .md\:justify-between {
@@ -864,10 +826,6 @@ font-family: 'Vazirmatn', sans-serif;*/
   .md\:px-14 {
     padding-left: 3.5rem;
     padding-right: 3.5rem;
-  }
-
-  .md\:pb-0 {
-    padding-bottom: 0px;
   }
 
   .md\:text-2xl {
