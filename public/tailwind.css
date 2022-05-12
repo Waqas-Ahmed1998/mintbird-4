@@ -6,21 +6,57 @@
   .overlay {
     @apply after:absolute   after:top-0 after:left-0 after:w-full after:h-full after:bg-black/20
   }
-
+  .input-field {
+    @apply bg-[#F5F5F5] border-[0.78px] focus:ring-0 focus:border-[#E4E4E4] border-[#E4E4E4] hover:outline-none focus:outline-none hover:border-[#E4E4E4] rounded-sm shadow-sm  w-full md:w-[204px] py-2 text-sm
+  }
+  .input-field-cvc {
+    @apply bg-[#F5F5F5] border-[0.78px]  border-[#E4E4E4] focus:ring-0  hover:outline-none focus:outline-none hover:border-[#E4E4E4] rounded-sm shadow-sm  w-full md:w-[204px] py-2 text-sm
+  }
+  .btn-applied {
+    @apply bg-[#F5F5F5]
+  }
 }
 body {
 
   /* font-family: 'Domin', serif; */
   -webkit-tap-highlight-color: transparent;
 }
+label {
+  color:#76808C
+}
+input{
+  font-family: 'Lato', sans-serif;
 
+
+}
 .montserat {
   font-family: 'Montserrat', sans-serif;
 
 }
+
 .popins {
   font-family: 'Poppins', sans-serif;
 
+}
+.maven-fonts {
+font-family: 'Maven Pro', sans-serif;
+
+}
+label {
+
+  font-family: 'Poppins', sans-serif;
+}
+.lato-fonts {
+font-family: 'Lato', sans-serif;
+
+}
+.roboto-fonts {
+font-family: 'Roboto', sans-serif;
+
+}
+.btn-applied:hover {
+  background-color: #0062FF;
+  color:white;
 }
 .rgba {
   background-color: rgba(255,255,255, 0.9);
@@ -57,12 +93,15 @@ font-family: 'Changa', sans-serif;
 font-family: 'Dancing Script', cursive;
 font-family: 'Domine', serif;
 font-family: 'Fjalla One', sans-serif;
+font-family: 'Francois One', sans-serif;
 font-family: 'Grape Nuts', cursive;
 font-family: 'Inter', sans-serif;
 font-family: 'Lato', sans-serif;
 font-family: 'Libre Baskerville', serif;
 font-family: 'Lobster', cursive;
+font-family: 'Maven Pro', sans-serif;
 font-family: 'Merriweather', serif;
+font-family: 'Mitr', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Noto Serif', serif;
 font-family: 'Open Sans', sans-serif;
@@ -72,6 +111,7 @@ font-family: 'Poppins', sans-serif;
 font-family: 'Prompt', sans-serif;
 font-family: 'Ranga', cursive;
 font-family: 'Roboto', sans-serif;
+font-family: 'Rokkitt', serif;
 font-family: 'Rubik Bubbles', cursive;
 font-family: 'Send Flowers', cursive;
 font-family: 'Source Sans Pro', sans-serif;
